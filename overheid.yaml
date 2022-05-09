@@ -1,0 +1,48 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Overheid
+servers:
+  - url: https://api.overheid.io
+
+paths:
+  /suggest/openkvk/:
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  handelsnaam:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Company"
+                  dossiernummer:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Company"
+                                  
+
+components:
+  schemas:
+    Company:
+      type: object
+      properties:
+        dossiernummer:
+          type: string
+        link:
+          type: string
+        text:
+          type: string
+        id:
+          type: string
+        plaats:
+          type: string
+        subdossiernummer:
+          type: string
+      required:
+        - dossiernummer
+        - link
+        - text
