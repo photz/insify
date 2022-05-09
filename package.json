@@ -1,0 +1,44 @@
+{
+  "name": "react-ts-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "build": "webpack build --mode=production",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.1.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0",
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@types/jest": "^27.5.0",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "axios": "^0.27.2",
+    "framer-motion": "^6.3.3",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.0.3",
+    "jest-environment-jsdom": "^28.0.2",
+    "msw": "^0.39.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "runtypes": "^6.5.1",
+    "ts-jest": "^28.0.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
